@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Conexão Esporte</title>
+  <meta name="description" content="Projeto estudantil que aproxima você do universo esportivo, trazendo histórias, curiosidades e conexões culturais.">
+
+  <!-- Bootstrap + Ícones -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+
+  <!-- CSS personalizado -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Skip Link -->
+  <a href="#conteudo" class="skip-link">Pular para o conteúdo</a>
+
+  <!-- Header -->
+  <header class="py-3 bg-vermelho shadow-sm">
+    <nav class="container d-flex justify-content-between align-items-center">
+      <a href="#" class="d-flex align-items-center text-white text-decoration-none">
+        <img src="CAPA NOVA - 2 ANO.png" alt="Logo Conexão Esporte" class="logo me-2">
+       
+        <span class="fw-bold">Conexão Esporte</span>
+      </a>
+      <ul class="nav d-none d-md-flex">
+        <li class="nav-item"><a class="nav-link text-white" href="#inicio">Início</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#sobre">Sobre</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#galeria">Galeria</a></li>
+      </ul>
+      <button class="btn btn-light d-md-none" id="menu-toggle"><i class="bi bi-list"></i></button>
+    </nav>
+
+    <!-- Menu Mobile -->
+    <div id="menu-mobile" class="menu-mobile d-md-none">
+      <a href="#inicio">Início</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#galeria">Galeria</a>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <!-- Início -->
+    <section id="inicio" class="inicio text-white d-flex align-items-center">
+      <div class="container text-center">
+        <h1 class="display-4 fw-bold text-vermelho">Seja bem-vindo ao Conexão Esporte</h1>
+        <p class="lead">Histórias, curiosidades e conexões através do esporte.</p>
+        <a href="#galeria" class="btn btn-lg btn-light fw-semibold mt-3">Quero conhecer!</a>
+      </div>
+    </section>
+
+    <!-- Sobre -->
+    <section id="sobre" class="py-5 container">
+      <div class="row align-items-center">
+        <div class="col-md- text-center mb-4 mb-md-0">
+          <img src="CAPA NOVA - 2 ANO.png" alt="Logo oficial Conexão Esporte" class="img-fluid rounded-circle shadow">
+        </div>
+        <div class="col-md-7">
+          <h2 class="text-vermelho fw-bold mb-3">Sobre o Projeto</h2>
+          <p>
+            O <strong>Conexão Esporte</strong> é um projeto criado pelos estudantes da 2ª série do Ensino Médio
+            da Escola Estadual Antonio Teixeira dos Santos. Nosso objetivo é aproximar você do universo esportivo,
+            trazendo histórias de modalidades, curiosidades sobre atletas e mostrando como o esporte conecta culturas
+            ao redor do mundo.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Galeria -->
+    <section id="galeria" class="py-5 bg-light">
+      <div class="container">
+        <h2 class="text-center text-vermelho fw-bold mb-4">História de Alguns Esportes</h2>
+        <div class="row g-4">
+          <!-- Atletismo -->
+          <div class="col-md-6 col-lg-3">
+            <div class="img-hover" data-bs-toggle="modal" data-bs-target="#modalAtletismo">
+              <img src="img/FOTO 1.png" alt="Atletismo" class="img-fluid rounded-4 shadow">
+              <div class="overlay"><strong>Atletismo</strong></div>
+            </div>
+          </div>
+          <!-- Vôlei -->
+          <div class="col-md-6 col-lg-3">
+            <div class="img-hover" data-bs-toggle="modal" data-bs-target="#modalVolei">
+              <img src="img/FOTO 2.png" alt="Vôlei" class="img-fluid rounded-4 shadow">
+              <div class="overlay"><strong>Vôlei</strong></div>
+            </div>
+          </div>
+          <!-- Basquete -->
+          <div class="col-md-6 col-lg-3">
+            <div class="img-hover" data-bs-toggle="modal" data-bs-target="#modalBasquete">
+              <img src="img/FOTO 3.png" alt="Basquete" class="img-fluid rounded-4 shadow">
+              <div class="overlay"><strong>Basquete</strong></div>
+            </div>
+          </div>
+          <!-- Futebol -->
+          <div class="col-md-6 col-lg-3">
+            <div class="img-hover" data-bs-toggle="modal" data-bs-target="#modalFutebol">
+              <img src="img/FOTO 4.png" alt="Futebol" class="img-fluid rounded-4 shadow">
+              <div class="overlay"><strong>Futebol</strong></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Modais -->
+  <div class="modal fade" id="modalAtletismo" tabindex="-1">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Atletismo: da Antiguidade aos Recordes</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <p>O atletismo é um dos esportes mais antigos do mundo. Surgiu na Grécia Antiga, nos Jogos Olímpicos de 776 a.C., inspirado em atividades básicas como correr, saltar e arremessar. No século XIX, ganhou forma moderna e hoje é praticado em todos os continentes.</p>
+          <p>Essa modalidade reúne cerca de 20 provas, divididas em corridas, saltos, arremessos, revezamentos e combinadas, sendo um dos esportes mais completos e globais.</p>
+          <p>Nos últimos Jogos Olímpicos (Paris 2024), grandes nomes brilharam: Beatrice Chebet (Quênia) venceu os 5.000 m e 10.000 m, Joshua Cheptegei (Uganda) levou ouro nos 10.000 m, Faith Kipyegon (Quênia) confirmou o tricampeonato nos 1.500 m e o sueco Mondo Duplantis quebrou recorde no salto com vara.</p>
+          <p><em>Mais que competição, o atletismo é história, emoção e superação!</em></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modalVolei" tabindex="-1">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">História do Vôlei</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <p>O vôlei foi criado em 1895 por William G. Morgan, diretor de educação física da YMCA em Holyoke, Massachusetts. Ele buscava um esporte menos vigoroso que o basquete, combinando ideias de badminton, tênis, beisebol e handebol. Originalmente chamado de mintonette, o nome evoluiu para volleyball após um observador notar o estilo de jogo de “voleio”.</p>
+          <p>Em 1896, ocorreu a primeira partida oficial em Springfield College. Nas décadas seguintes, as regras foram aperfeiçoadas: padronização do número de jogadores, limites de toques e consolidação de táticas como o spike.</p>
+          <p>Em 1947, foi fundada a FIVB em Paris. Desde então, o esporte ganhou torneios importantes como os Mundiais e ingressou nos Jogos Olímpicos de 1964.</p>
+          <p><strong>Principais Competições Atuais:</strong> Campeonatos Mundiais da FIVB, Liga das Nações, Copa do Mundo e ligas continentais.</p>
+          <p><strong>Últimos Campeões Olímpicos (Paris 2024):</strong><br>
+          Masculino: França (bicampeã).<br>
+          Feminino: Itália (1º ouro olímpico).</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modalBasquete" tabindex="-1">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Origem e Auge do Basquete</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <p>Criado em 1891 por James Naismith, em Springfield (EUA), como forma de manter os alunos ativos no inverno rigoroso. Naismith usou cestas de pêssego e 13 regras básicas.</p>
+          <p><strong>Momentos marcantes:</strong><br>
+          1936: estreia olímpica em Berlim.<br>
+          1946: fundação da NBA.<br>
+          Anos 1980-90: auge global com Jordan, Magic Johnson, Bird e Kobe Bryant.</p>
+          <p>Hoje, o basquete é praticado em quase todos os países, movimenta bilhões e tem astros globais como LeBron James, Curry e Giannis.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modalFutebol" tabindex="-1">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">História do Futebol</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <p>O futebol moderno nasceu na Inglaterra no século XIX, com a fundação da Football Association em 1863. No Brasil, chegou em 1894 com Charles Miller.</p>
+          <p><strong>Principais Competições:</strong> Champions League, Libertadores, Eurocopa, Premier League e Brasileirão.</p>
+          <p><strong>Últimos Campeões Olímpicos (Paris 2024):</strong><br>
+          Masculino: Espanha (ouro), França (prata), Marrocos (bronze).<br>
+          Feminino: EUA (ouro), Brasil (prata), Alemanha (bronze).</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="py-3 bg-dark text-center text-white">
+    <small>© <span id="ano"></span> Conexão Esporte — Todos os direitos reservados.</small>
+  </footer>
+
+  <!-- JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
+
